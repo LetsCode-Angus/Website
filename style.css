@@ -4,11 +4,9 @@
   margin: 0;
   background-color: whitesmoke;
 }
-
 p {
   font-family: sans-serif;
 }
-
 .Header div h1{
   font-family: 'Permanent Marker', sans-serif;
   color: white;
@@ -17,14 +15,11 @@ p {
   font-size: 35px;
   background: none;
 }
-
 .Header div {
   display: block;
   background-color: tomato;
   box-shadow: 0px 3px 2px slategrey;
 }
-
-
 .Header {
   margin-bottom: 10px;
 }
