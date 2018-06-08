@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nerd Bros</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Libre+Barcode+39+Text|Lobster" rel="stylesheet">
+  <title>Document</title>
 </head>
-<body>
-  <section class="Header">
-    <div>      <h1>NerdBros</h1> </div>
-  </section>
-  
-  <p>Blahhhhh, This is an actual website that is coded by me by hand</p>
+<body id="body">
+  <div class="ContentArea">
+      <h1>Rainbow</h1>
+      <p> YOU CAN DO IT </p>
+
+  </div>
+  <footer>Angus Barnes  2018</footer>
 </body>
+<script>
+  
+let colors = ["#5e9bff", "#defc74", "#f274fc", "#fc9a74", "#7874fc", "#fc749c"];
+
+let i = 0;
+setInterval( () => {
+
+    document.body.style.backgroundColor = colors[i];
+    i = i + 1;
+    if (i >= colors.length){
+      i = 0;
+    }
+}, 2500);
+</script>
 </html>
