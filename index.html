@@ -14,6 +14,13 @@
   <footer>Angus Barnes  2018</footer>
 </body>
 <script>
+  fs = require('fs')
+  fs.readFile('./all.txt', (err, data) => {
+    let sentences = data.toString().split('/n');
+    document.getElementsByTagName("h1")[0].innerHTML = sentences[3];
+  });
+</script>
+<script>
   
 let colors = ["#5e9bff", "#defc74", "#f274fc", "#fc9a74", "#7874fc", "#fc749c"];
 
