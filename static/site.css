@@ -1,0 +1,49 @@
+.title-box {
+    font : 'Press Start 2P';
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 1em;
+}
+
+.title-box h1 {
+    font-size: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.title-box .byline {
+    font-style: italic;
+    font: 'sans-serif';
+    font-size: 1em;
+    color: gray;
+}
+
+.title-box img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+    width: 10em;
+}
+
+.title.is-centered {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 1.5em;
+}

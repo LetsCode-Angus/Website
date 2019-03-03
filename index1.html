@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Libre+Barcode+39+Text|Lobster" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body id="body">
+  <div class="ContentArea">
+      <h1>TOM TALKS!!!!</h1>
+      <p> EE Mur </p>
+
+  </div>
+  <footer>Angus Barnes  2018</footer>
+</body>
+<script>
+  fs = require('fs')
+  fs.readFile('./all.txt', (err, data) => {
+    let sentences = data.toString().split('/n');
+    document.getElementsByTagName("h1")[0].innerHTML = sentences[3];
+  });
+</script>
+<script>
+  
+let colors = ["#5e9bff", "#defc74", "#f274fc", "#fc9a74", "#7874fc", "#fc749c"];
+
+let i = 0;
+setInterval( () => {
+
+    document.body.style.backgroundColor = colors[i];
+    i = i + 1;
+    if (i >= colors.length){
+      i = 0;
+    }
+}, 2500);
+</script>
+</html>

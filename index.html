@@ -1,37 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Libre+Barcode+39+Text|Lobster" rel="stylesheet">
-  <title>Document</title>
-</head>
-<body id="body">
-  <div class="ContentArea">
-      <h1>TOM TALKS!!!!</h1>
-      <p> EE Mur </p>
+<html>
+    <head>
+            <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+            <link href="./static/site.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+            <title>Its Only Angus</title>
+    </head>
+    <body>
+        <div class="title-box">
+            <img src="./static/avatar.png" alt="Ast0naught">
+            <h1 class="title is-centered">Angus Barnes</h1>
+            <h3 class= "byline is-centered">The Ast0naught</h3>
+        </div>
+        <div class="content">
+            <section class="nes-container with-title is-centered">
+                <p class="title is-large">About Me</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est reprehenderit dignissimos veniam, laboriosam ea sequi odit neque blanditiis dolor. Alias iste minus maiores sequi, autem quo! Id debitis adipisci enim.</p>
+            </section>
+        </div>
+        <div class="content">
+            <section class="nes-container with-title is-centered">
+                <p class="title">Some clicky buttons</p>
+                <a class="nes-btn">Normal</a>
 
-  </div>
-  <footer>Angus Barnes  2018</footer>
-</body>
-<script>
-  fs = require('fs')
-  fs.readFile('./all.txt', (err, data) => {
-    let sentences = data.toString().split('/n');
-    document.getElementsByTagName("h1")[0].innerHTML = sentences[3];
-  });
-</script>
-<script>
-  
-let colors = ["#5e9bff", "#defc74", "#f274fc", "#fc9a74", "#7874fc", "#fc749c"];
-
-let i = 0;
-setInterval( () => {
-
-    document.body.style.backgroundColor = colors[i];
-    i = i + 1;
-    if (i >= colors.length){
-      i = 0;
-    }
-}, 2500);
-</script>
+                <button type="button" class="nes-btn is-primary">Blue</button>
+                <button type="button" class="nes-btn is-success">Green</button>
+                <button type="button" class="nes-btn is-warning">Yellow</button>
+                <button type="button" class="nes-btn is-error">Red</button>
+            </section>
+        </div>
+        <div class="content">
+            <section class="nes-container with-title is-centered">
+                <p class="title">Find Me</p>
+                <section class="icon-list">
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/its_gussy_" target="_blank"><i class="nes-icon instagram is-large"></i></a>
+                      
+                        <!-- github -->
+                        <a href="https://github.com/LetsCode-Angus" target="_blank"><i class="nes-icon github is-large"></i></a>
+                      
+                        <!-- gmail -->
+                        <a href="mailto:duckoutnow@gmail.com" target="_blank"><i class="nes-icon gmail is-large"></i> </a>
+                      
+                        <!-- twitch -->
+                        <a href="https://www.twitch.tv/itsgussyyyy"><i class="nes-icon twitch is-large"></i></a>     
+                      
+                      </section>
+            </section>
+        </div>
+    </body>
+    <footer class="content" style="margin-top: 2em;">
+            <span>©2019 Angus Barnes. Licensed from <a href="https://nostalgic-css.github.io/NES.css/">NES.css</a></span>
+    </footer>
 </html>
